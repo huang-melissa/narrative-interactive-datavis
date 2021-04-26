@@ -12,4 +12,4 @@ Realtor.com provides Real Estate Data through their website: https://www.realtor
 
 ### Initial sketches -
 
-![alt text](URL.png?raw=true)
+![alt text](initialsketch.png?raw=true)
