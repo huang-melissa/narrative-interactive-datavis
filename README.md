@@ -13,3 +13,17 @@ Realtor.com provides Real Estate Data through their website: https://www.realtor
 ### Initial sketches -
 
 ![alt text](initialsketch.png?raw=true)
+
+## PHASE II: Brainstorming + Sketches
+
+Both nominal and continuous data will be used. 
+To represent relationships between variables, I intend on using a scatter plot. 
+To represent change over time, I intend on using an area chart. 
+To represent quantities between categories, I will use numeric representations or bar charts.
+
+The intended interactions include dropdown filters and transitions between different selections. 
+All of the visualizations will be placed on a single page with accompanying text to provide information. 
+
+### Sketches: 3 distinct directions in the form of sketches & 1 direction fleshed out - 
+
+![alt text](sketch2.png?raw=true)
