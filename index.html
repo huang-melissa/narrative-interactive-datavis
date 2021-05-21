@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>Line/area chart: Interactive Data Visualization Tutorial 4</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Meddon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+  <center><img src="title5.png" width=500px></center>
+
+   <h2>The residenetial real estate market has had its ups and downs throughout the years, but unprecedented and dramatic changes in the market are being seen as the United States continues to deal with the COVID-19 pandemic. 
+  As a significant proportion of the workforce works from home, page-per-property views on real estate platforms like Realtor have skyrocketed. People are relocating due to this flexibility and residential property inventory continues to decline while the prices of building materials keep climbing. 
+  All of these factors are contributing to one of the <font color="#ca472d">hottest</font> real estate markets in recent times. <b>Let's take a closer look:</b>
+   </h2>
+   
+   <div id="numintro"> DAYS ON THE MARKET </div>
+   <h4>2021: 64.08 days</h4>
+   <h5>2020: 65.08 days</h5>
+   <h6>2019: 67.8 days</h6>
+  
+    <!-- <label for="dropdown">Spending Type:</label>
+    <select id="dropdown" name="dropdown"></select> -->
+    <dive id="viz">
+      
+    <div id="barintro"> MEDIAN LIST PRICES </div>
+    <!-- <div id="bardrop">  
+      <label for="dropdown">Year:</label>
+      <select id="dropdown" name="dropdown"></select></div> -->
+    <div id="barchart-container"></div>
+
+    <div id="areaintro"> WITH WHAT? </div>
+    <div id="areadrop">  
+      <label for="dropdown2">Gift:</label>
+      <select id="dropdown2" name="dropdown2"></select></div>
+
+    <div id="area-container"> </div>
+    
+    <!-- <div id="treeintro"> WITH WHAT?<br> (breakdown by men vs women in 2021)</div>
+    
+    <div id="tree-container"></div> -->
+
+  </div>
+    <script src="../lib/d3.js"></script>
+    <script src="bar.js"></script>
+    <script src="area.js"></script>
+    <script src="tree.js"></script>
+  </body>
+</html>
