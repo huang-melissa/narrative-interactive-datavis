@@ -1,7 +1,7 @@
 /* CONSTANTS AND GLOBALS */
-const width = window.innerWidth * 0.7,
+const width = window.innerWidth * 0.75,
   height = window.innerHeight / 2,
-  margin = { top: 20, bottom: 50, left: 85, right: 20 },
+  margin = { top: 20, bottom: 50, left: 100, right: 100 },
   radius = 3;
 
 //const formatBillions = (num) => d3.format(".2s")(num).replace(/G/, 'B')
@@ -26,11 +26,11 @@ let state = {
 /* LOAD DATA */
 // + SET YOUR DATA PATH
 
-d3.csv('../data/gift_percent.csv', d3.autoType, (d) => {
+d3.csv('../data/area_data.csv', d3.autoType, (d) => {
   const Object = {
     Type: d.Type,
     Value: +d.Value,
-    Year: new Date(+d.Year, 1, 1)
+    Year: new Date(+d.Year, 1)
   }
   return Object
 })
@@ -94,7 +94,7 @@ function init() {
     .attr("font-weight", "bold")
     .attr("letter-spacing", "0.2em")
     .attr("font-size","12")
-    .attr("style","fill:#702b43")
+    .attr("style","fill:#af3b24")
     .text("Year")
   
   yAxisGroup = svg.append("g")
@@ -104,14 +104,14 @@ function init() {
 
   yAxisGroup.append("text")
     .attr("class", 'yLabel')
-    .attr("transform", `translate(${-40}, ${height / 2})`)
+    .attr("transform", `translate(${-75}, ${height / 2})`)
     .attr("writing-mode", 'vertical-rl')
     .attr("text-anchor", "middle")
     .attr("font-weight", "bold")
     .attr("letter-spacing", "0.1em")
     .attr("font-size","12")
-    .attr("style","fill:#702b43")
-    .text("% of those surveyed")
+    .attr("style","fill:#af3b24")
+    .text("Median List Price (USD)")
 
   draw(); // calls the draw function
 }
@@ -146,7 +146,7 @@ function draw() {
     .data(d => [d]) // pass along data from parent to child
     .join("circle")
     .attr("r", radius)
-    .attr("fill", "#702e44")
+    .attr("fill", "#af3b24")
   
   // add tooltip
   dots.selectAll("text")
@@ -154,7 +154,7 @@ function draw() {
       .join("text")
       .attr("text-anchor", "start")
       .attr('opacity', '0')
-      .text(d => `${formatDate(d.Year)}: ${d3.format(",")(d.Value)}%`)
+      .text(d => ` ${formatDate(d.Year)}: $${d3.format(",")(d.Value)} USD`)
       .on('mouseover', function (d, i) {
         d3.select(this).transition()
             .duration('100')
@@ -181,7 +181,7 @@ function draw() {
     .join("path")
     .attr("class", 'line')
     .attr("fill", "none")
-    .attr("stroke", "#702e44")
+    .attr("stroke", "#bc442c")
     .transition()
     .duration(1000)
     .attr("d", d => lineGen(d))
@@ -195,7 +195,7 @@ function draw() {
     .data([filteredData]) // data needs to take an []
     .join("path")
     .attr("class", 'area')
-    .attr("fill", "#b57282")
+    .attr("fill", "#e56e57")
     .transition()
     .duration(1000)
     .attr("d", d => area(d))

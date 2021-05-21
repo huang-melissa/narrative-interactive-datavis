@@ -156,8 +156,8 @@ h6 {
 
 #area-container{
     position: absolute;
-    top: 890px;
-    left: 40px;
+    top: 975px;
+    left: 120px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
@@ -166,7 +166,7 @@ h6 {
 
 #areaintro{
     position: absolute;
-    top: 935px; 
+    top: 950px; 
     left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
@@ -178,35 +178,45 @@ h6 {
   
   #areadrop{
     position: absolute;
-    top: 950px;
-    left: 700px;
+    top: 960px;
+    left: 690px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.5px;
     border: 0px solid red;
 }
 
-/* #treeintro{
+#scatterintro{
     position: absolute;
-    top: 1200px; 
-    left: 700px;
+    top: 1350px; 
+    left: 40px;
     font-family: "Raleway", serif;
     font-weight: bold; 
     letter-spacing: 2px;
-    color: #7c243d;
+    color: #FFFFFF;
     font-size: 20px;
-    border: 0px solid purple;
+    border: 3px solid purple;
   }
 
-#tree-container{
+#d3-container{
     position: absolute;
-    top: 1250px;
+    top: 1500px;
     left: 40px;
     font-size: 10px;
     font-family: "Raleway", serif;
     letter-spacing: 1.25px;
-    border: 0px solid orange;
-} */
+    border: 2px solid orange;
+}
+
+#scatterdrop{
+  position: absolute;
+  top: 1500px;
+  left: 690px;
+  font-size: 10px;
+  font-family: "Raleway", serif;
+  letter-spacing: 1.5px;
+  border: 0px solid red;
+}
   svg{
       font-family: "Raleway", "Montesserat", serif;
   }
