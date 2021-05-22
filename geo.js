@@ -1,7 +1,7 @@
 /**
  * CONSTANTS AND GLOBALS
  * */
-const width = window.innerWidth * 0.9,
+const width = window.innerWidth * 0.7,
   height = window.innerHeight * 0.7,
   margin = { top: 20, bottom: 50, left: 60, right: 40 };
 
@@ -78,15 +78,15 @@ svg.selectAll("circle")
 .join("circle")
 .attr("stroke", "white")
 .attr("fill", d=>{
-  if (d.Change_in_95_percent_Days>0) return "#cc6a3f" // tangerine
-  else if (d.Change_in_95_percent_Days===0) return "#dad5aa" // beige 
-  else return "#6ecbee" // frozen blue
+  if (d.Change_in_95_percent_Days_abs<5) return "#b73318" // red
+  else if (d.Change_in_95_percent_Days_abs===0) return "#dad5aa" // beige 
+  else return "#da9b75" // orange
 })
 // could not get Math.abs to work, so created new column of absolute values
 .attr("r", d=>{ 
-  if (d.Change_in_95_percent_Days_abs>30) return 15;
-  else if (d.Change_in_95_percent_Days_abs>1 || d.Change_in_95_percent_Days_abs<29) return 7;
-  else if (d.Change_in_95_percent_Days_abs===0 || d.Change_in_95_percent_Days_abs<9) return 2;
+  if (d.Change_in_95_percent_Days_abs>15) return 15;
+  else if (d.Change_in_95_percent_Days_abs>1 || d.Change_in_95_percent_Days_abs<10) return 7;
+  else if (d.Change_in_95_percent_Days_abs===0 || d.Change_in_95_percent_Days_abs<5) return 2;
   else return 1
 })
 .attr("fill-opacity", "0.5")
