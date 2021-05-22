@@ -1,0 +1,170 @@
+.hover-content{
+    top: 0;
+    left: 0;
+    max-width: 200px;
+    background-color: #cfb4cf; /* darker light pink */ 
+    padding: .10em;
+    opacity: .85;
+    /* need to remove pointer events so that
+    the tooltip doesn't interrupt the mouse events */
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 0 0 7px gainsboro;
+  }
+  
+
+  .hover-content.visible{
+    opacity: .95;
+    font-size: 12px;
+  }
+  
+  body {
+    background: rgb(179,176,177);
+background: linear-gradient(180deg, rgba(179,176,177,1) 0%, rgba(203,185,168,1) 100%) fixed;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: "Raleway", "Helvetica", sans-serif; 
+    color: white;
+}
+ 
+  
+  h1 {
+      color: #FFFFFF;
+      text-align: Center;
+      font-size: 50px;
+      font-weight: bold; 
+      font-family: "Meddon", serif;
+      letter-spacing: 2px; 
+  }
+
+  h2 {
+    color: #696969;
+    text-align: Center;
+    font-weight: normal; 
+    font-size: 12px;
+    letter-spacing: 1px; 
+    font-family: "Raleway", serif;
+}
+
+h3 {
+    color: #ddcbd3;
+    text-align: Center;
+    font-weight: bold; 
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-family: "Raleway", serif;
+  
+}
+
+h4 {
+  color: #b6281a;
+  text-align: Center;
+  font-weight: bold; 
+  font-size: 60px;
+  position: absolute;
+  top: 260px;
+  left: 500px;
+  letter-spacing: 1px; 
+  font-family: "Raleway", serif;
+}
+
+h5 {
+  color: #b65023;
+  text-align: Center;
+  font-weight: bold; 
+  font-size: 60px;
+  position: absolute;
+  top: 325px;
+  left: 500px;
+  letter-spacing: 1px; 
+  font-family: "Raleway", serif;
+}
+
+h6 {
+  color: #c78237;
+  text-align: Center;
+  font-weight: bold; 
+  font-size: 60px;
+  position: absolute;
+  top: 370px;
+  left: 500px;
+  letter-spacing: 1px; 
+  font-family: "Raleway", serif;
+}
+  div {
+  
+      padding: 10px;
+      text-align: Center;
+  }
+  
+  text {
+    fill : white;
+  }
+  
+  /* #viz{
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: 2fr, 1fr, 1fr;
+    column-gap: 1em;
+    row-gap: 1em;
+  }  */
+
+  #geointro{
+    position: absolute;
+    top: 310px; 
+    left: 40px;
+    font-family: "Raleway", serif;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 0px solid blue;
+  }
+
+  #geo-container{
+    position: absolute; 
+    top: 385px; 
+    left: 40px;
+    font-size: 10px;
+    font-family: "Raleway", serif;
+    letter-spacing: 1.5px;
+    border: 0px solid green;
+}
+
+
+#area-container{
+    position: absolute;
+    top: 975px;
+    left: 120px;
+    font-size: 10px;
+    font-family: "Raleway", serif;
+    letter-spacing: 1.25px;
+    border: 0px solid red;
+}
+
+#areaintro{
+    position: absolute;
+    top: 950px; 
+    left: 40px;
+    font-family: "Raleway", serif;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    font-size: 20px;
+    border: 0px solid blue;
+  }
+  
+  #areadrop{
+    position: absolute;
+    top: 960px;
+    left: 690px;
+    font-size: 10px;
+    font-family: "Raleway", serif;
+    letter-spacing: 1.5px;
+    border: 0px solid red;
+}
+
+
+  svg{
+      font-family: "Raleway", "Montesserat", serif;
+  }
